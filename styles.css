@@ -30,6 +30,7 @@ body {
 
 .glitch{
    position: relative; 
+   font-family: 'Comfortaa', cursive;
 }
 
 .glitch:after{
