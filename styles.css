@@ -160,3 +160,17 @@ project-description {
   height:10px;
   width:100%;
 }
+
+.about-container {
+  background-color: cornflowerblue;
+  margin-left: -10px;
+  margin-right: -10px;
+  overflow:auto;
+}
+
+.about-text {
+  width: 58%;
+  text-align: center;
+  padding-left: 21%;
+  margin-bottom: 10%;
+}
