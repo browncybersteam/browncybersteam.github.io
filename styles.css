@@ -162,10 +162,22 @@ project-description {
 }
 
 .about-container {
-  background-color: cornflowerblue;
+  background-color: rgb(233, 233, 255);
   margin-left: -10px;
   margin-right: -10px;
   overflow:auto;
+}
+
+.about-title {
+  background: url(img/source.gif) repeat center 950px;
+	background-size: 500px 500px;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  text-align: center;
+  padding-top: 5%;
+  font-size: 600%;
+  margin: 2%;
 }
 
 .about-text {
@@ -173,4 +185,5 @@ project-description {
   text-align: center;
   padding-left: 21%;
   margin-bottom: 10%;
+  color: rgb(17, 17, 17);
 }
