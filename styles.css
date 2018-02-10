@@ -4,26 +4,55 @@ body {
    font-family: "Roboto Mono", monospace; 
 }
 
-@keyframes title-animation {
-  0% {color: white;}
-  50% {color: rgb(73, 173, 255);}
-  100% {color: white;}
+
+.big-purple { 
+   color: #CB52D0; 
+   font-weight: 700; 
 }
 
-.title {
-   font-size: 1em; 
+.navbar { 
+   max-width: 1000px;
    margin: auto;
-   text-align: center;
-   font-weight: 400;
-   position: relative;
-   margin: 0 auto;
-   padding-top: 1%;
-   animation: title-animation 20.0s infinite;
+   padding: 10px;
+   border-bottom: solid #333 2px;
+   margin-bottom: 10px;
+   display: flex;
+   justify-content: space-around;
 }
 
-.logo { 
-   height: 1.3em;
-   margin-bottom: -5px;
+.navbar a { 
+   color: #aaa;
+   text-decoration: none;   
+}
+
+.navbar a:hover { 
+   color: #eee;
+}
+
+.about-container {
+  background-color: #222;
+  margin: auto; 
+  max-width: 800px; 
+   padding: 50px;
+  padding-bottom: 100px;
+  overflow:auto;
+}
+
+.about-title {
+  background: url(img/source.gif) repeat center 950px;
+  background-size: 500px 500px;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  text-align: center;
+  padding-top: 5%;
+  font-size: 3em;
+  margin: 2%;
+}
+
+.about-text {
+  text-align: left;  
+  color: #eee;
 }
 
 .big {   
@@ -34,6 +63,104 @@ body {
    font-family: "Lora", serif; 
    margin-left: auto;
    margin-right: auto;
+}
+
+.title {
+   font-size: 1em; 
+   margin: auto;
+   text-align: center;
+   font-weight: 400;
+   position: relative;
+   margin: 0 auto;
+   padding-top: 1%;
+   padding-bottom: 10px;
+   animation: title-animation 20.0s infinite;
+}
+
+.logo { 
+   height: 1.3em;
+   margin-bottom: -5px;
+}
+
+.link-no-underline {
+  text-decoration: none;
+}
+
+.projects { 
+   padding: 10px; 
+}
+
+.project-container {
+   padding: 10px; 
+   padding-bottom: 20px;
+   display: grid; 
+   grid-column: span 1; 
+}
+
+.project-link-img {
+  animation: darken 0.5s forwards;
+  border-radius:3%;
+  width:100%;
+  height:auto;
+}
+
+.project-link-img:hover {
+  animation: lighten 0.2s forwards;
+}
+
+.project-title {
+  font-family: "Roboto Mono", monospace;
+  padding:3px;
+  margin:4px;
+}
+
+.project-description {
+  font-family: "Roboto Mono", monospace;
+  font-size: 0.8em;
+  color: #AAAAAA;
+  
+  padding-top:5px;
+  padding-left:6px;
+  margin:2px;
+  display:block;
+}
+
+.vspace {
+  height:10px;
+  width:100%;
+}
+
+@media (min-width: 500px) { 
+   .projects { 
+      display: grid; 
+      grid-template-columns: 1fr 1fr; 
+   }
+} 
+
+@media (min-width: 1000px) { 
+   .projects { 
+      display: grid; 
+      grid-template-columns: 1fr 1fr 1fr; 
+   }
+}
+
+
+/* Animations */ 
+
+@keyframes lighten {
+  from {filter: brightness(100%); opacity: 0.9;}
+  to {filter: brightness(120%); opacity: 1.0;}
+}
+
+@keyframes darken {
+  from {filter: brightness(120%); opacity: 1.0;}
+  to {filter: brightness(100%); opacity: 0.9;}
+}
+
+@keyframes title-animation {
+  0% {color: white;}
+  50% {color: rgb(73, 173, 255);}
+  100% {color: white;}
 }
 
 .glitch{
@@ -107,83 +234,4 @@ body {
   overflow:hidden;
   clip:rect(0,9999px,0,0); 
   animation:glitch-anim2 3s infinite linear alternate-reverse;
-}
-
-.link-no-underline {
-  text-decoration: none;
-}
-
-.project-button-container {
-  float:left;
-  width:31.7%;
-  padding:0.4%;
-  margin:0.4%;
-}
-
-@keyframes lighten {
-  from {filter: brightness(100%); opacity: 0.9;}
-  to {filter: brightness(120%); opacity: 1.0;}
-}
-
-@keyframes darken {
-  from {filter: brightness(120%); opacity: 1.0;}
-  to {filter: brightness(100%); opacity: 0.9;}
-}
-
-.project-link-img {
-  animation: darken 0.5s forwards;
-  border-radius:3%;
-  width:100%;
-  height:auto;
-}
-
-.project-link-img:hover {
-  animation: lighten 0.5s forwards;
-}
-
-project-title {
-  font-family: "Roboto Mono", monospace;
-  padding:3px;
-  margin:4px;
-}
-
-project-description {
-  font-family: "Roboto Mono", monospace;
-  font-size: 10px;
-  padding-top:5px;
-  padding-left:6px;
-  margin:2px;
-  display:block;
-}
-
-.vspace {
-  height:10px;
-  width:100%;
-}
-
-.about-container {
-  background-color: rgb(233, 233, 255);
-  margin-left: -10px;
-  margin-right: -10px;
-  overflow:auto;
-}
-
-.about-title {
-  background: url(img/source.gif) repeat center 950px;
-	background-size: 500px 500px;
-  -webkit-text-fill-color: transparent;
-  -webkit-background-clip: text;
-  background-clip: text;
-  text-align: center;
-  padding-top: 5%;
-  font-size: 600%;
-  margin: 2%;
-}
-
-.about-text {
-  width: 58%;
-  text-align: center;
-  padding-left: 21%;
-  margin-bottom: 10%;
-  color: rgb(17, 17, 17);
 }
