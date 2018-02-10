@@ -100,8 +100,11 @@ body {
 .project-link-img {
   animation: darken 0.5s forwards;
   border-radius:3%;
-  width:100%;
-  height:auto;
+  margin-bottom: 10px;
+  background-size:cover;
+  background-repeat:no-repeat;
+  width: 100%;
+  min-height: 250px;
 }
 
 .project-link-img:hover {
@@ -110,6 +113,7 @@ body {
 
 .project-title {
   font-family: "Roboto Mono", monospace;
+  margin-top: 10px;
   padding:3px;
   margin:4px;
 }
@@ -142,6 +146,21 @@ body {
       display: grid; 
       grid-template-columns: 1fr 1fr 1fr; 
    }
+   .project-link-img{ 
+      min-height: 300px;
+   }
+}
+
+#lantern-village-img { 
+   background-image: url(img/four_lanterns.jpg); 
+}
+
+#planetary-motion-img { 
+   background-image: url(img/planetary-motion.png); 
+}
+
+#dancing-scilis-img { 
+   background-image: url(img/dancing-scilis.png);
 }
 
 
