@@ -150,6 +150,9 @@ body {
 }
 
 /* COVER IMAGES */ 
+#musicfind-img { 
+   background-image: url(img/musicfind.jpg); 
+}
 
 #lantern-village-img { 
    background-image: url(img/four_lanterns.jpg); 
