@@ -1,15 +1,15 @@
-body { 
+body {
    background-color: #222;
-   color: #eee; 
-   font-family: "Roboto Mono", monospace; 
+   color: #eee;
+   font-family: "Roboto Mono", monospace;
 }
 
-.big-purple { 
-   color: #CB52D0; 
-   font-weight: 700; 
+.big-purple {
+   color: #CB52D0;
+   font-weight: 700;
 }
 
-.navbar { 
+.navbar {
    max-width: 1000px;
    margin: auto;
    padding: 10px;
@@ -19,19 +19,19 @@ body {
    justify-content: space-around;
 }
 
-.navbar a { 
+.navbar a {
    color: #aaa;
-   text-decoration: none;   
+   text-decoration: none;
 }
 
-.navbar a:hover { 
+.navbar a:hover {
    color: #eee;
 }
 
 .about-container {
   background-color: #222;
-  margin: auto; 
-  max-width: 800px; 
+  margin: auto;
+  max-width: 800px;
    padding: 50px;
   padding-bottom: 100px;
   overflow:auto;
@@ -50,22 +50,22 @@ body {
 }
 
 .about-text {
-  text-align: left;  
+  text-align: left;
   color: #eee;
 }
 
-.big {   
-   font-size: 4em; 
+.big {
+   font-size: 4em;
    margin: 100px auto;
    max-width: 801px;
    padding:10px;
-   font-family: "Lora", serif; 
+   font-family: "Lora", serif;
    margin-left: auto;
    margin-right: auto;
 }
 
 .title {
-   font-size: 1em; 
+   font-size: 1em;
    margin: auto;
    text-align: center;
    font-weight: 400;
@@ -76,7 +76,7 @@ body {
    animation: title-animation 20.0s infinite;
 }
 
-.logo { 
+.logo {
    height: 1.3em;
    margin-bottom: -5px;
 }
@@ -85,15 +85,15 @@ body {
   text-decoration: none;
 }
 
-.projects { 
-   padding: 10px; 
+.projects {
+   padding: 10px;
 }
 
 .project-container {
-   padding: 10px; 
+   padding: 10px;
    padding-bottom: 20px;
-   display: grid; 
-   grid-column: span 1; 
+   display: grid;
+   grid-column: span 1;
 }
 
 .project-link-img {
@@ -132,46 +132,50 @@ body {
   width:100%;
 }
 
-@media (min-width: 500px) { 
-   .projects { 
-      display: grid; 
-      grid-template-columns: 1fr 1fr; 
+@media (min-width: 500px) {
+   .projects {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
    }
-} 
+}
 
-@media (min-width: 1000px) { 
-   .projects { 
-      display: grid; 
-      grid-template-columns: 1fr 1fr 1fr; 
+@media (min-width: 1000px) {
+   .projects {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
    }
-   .project-link-img{ 
+   .project-link-img{
       min-height: 300px;
    }
 }
 
-/* COVER IMAGES */ 
-#musicfind-img { 
-   background-image: url(img/musicfind.jpeg); 
+/* COVER IMAGES */
+#double-pendulum-img {
+  background-image: url(double_pendulum_demo_pic_2.png);
 }
 
-#lantern-village-img { 
-   background-image: url(img/four_lanterns.jpg); 
+#musicfind-img {
+   background-image: url(img/musicfind.jpeg);
 }
 
-#planetary-motion-img { 
-   background-image: url(img/planetary-motion.png); 
+#lantern-village-img {
+   background-image: url(img/four_lanterns.jpg);
 }
 
-#dancing-scilis-img { 
+#planetary-motion-img {
+   background-image: url(img/planetary-motion.png);
+}
+
+#dancing-scilis-img {
    background-image: url(img/dancing-scilis.png);
 }
 
-#schroeder-house-img { 
+#schroeder-house-img {
    background-image: url(img/shroeder-house.png);
 }
 
 
-/* Animations */ 
+/* Animations */
 
 @keyframes lighten {
   from {filter: brightness(100%); opacity: 0.9;}
@@ -190,7 +194,7 @@ body {
 }
 
 .glitch{
-   position: relative; 
+   position: relative;
    font-family: 'Comfortaa', cursive;
 }
 
@@ -203,7 +207,7 @@ body {
   color: #eee;
   background:#222;
   overflow:hidden;
-  clip:rect(0,9999px,0,0); 
+  clip:rect(0,9999px,0,0);
   animation:glitch-anim 2s infinite linear alternate-reverse;
 }
 
@@ -253,11 +257,11 @@ body {
   content:attr(data-text);
   position:absolute;
   left:-2px;
-  text-shadow:1px 0 blue; 
+  text-shadow:1px 0 blue;
   top:0;
   color:#eee;
   background:#222;
   overflow:hidden;
-  clip:rect(0,9999px,0,0); 
+  clip:rect(0,9999px,0,0);
   animation:glitch-anim2 3s infinite linear alternate-reverse;
 }
